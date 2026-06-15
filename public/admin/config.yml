@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/img"
+public_folder: "/img"
+
+collections:
+  - name: "configuracion"
+    label: "Datos de la Clínica"
+    files:
+      - file: "public/data/contacto.json"
+        label: "Información de Contacto"
+        name: "contacto"
+        fields:
+          - { label: "Teléfono de la Clínica", name: "telefono", widget: "string" }
+          - { label: "Enlace de WhatsApp", name: "whatsapp", widget: "string" }
+          - { label: "Dirección Física", name: "direccion", widget: "string" }
+          - { label: "Frase Principal de Portada", name: "frase_hero", widget: "text" }
