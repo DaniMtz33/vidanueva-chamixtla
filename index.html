@@ -3,180 +3,706 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vida Nueva Chamixtla | Clínica de Rehabilitación</title>
+    <title>Vida Nueva Chamixtla | Grupo de Ayuda Mutua</title>
+    <meta name="description" content="Grupo de Ayuda Mutua Vida Nueva Chamixtla – Rehabilitación integral con trato humano, empático y personalizado. Atención las 24 horas en Chamixtla.">
     <link rel="stylesheet" href="/src/style.css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body class="bg-dark-mate text-slate-100 antialiased selection:bg-dorado selection:text-dark-mate">
 
-    <nav class="fixed top-0 left-0 w-full bg-dark-mate/95 backdrop-blur-md z-50 border-b border-dorado/20 px-6 py-4 flex justify-between items-center">
-      <div class="text-dorado font-bold text-lg tracking-wide uppercase">Vida Nueva Chamixtla</div>
-      <ul class="hidden md:flex space-x-6 text-sm font-medium tracking-wide">
-        <li><a href="#inicio" class="hover:text-dorado transition-colors">Inicio</a></li>
-        <li><a href="#nosotros" class="hover:text-dorado transition-colors">Nosotros</a></li>
-        <li><a href="#metodo" class="hover:text-dorado transition-colors">Nuestro Método</a></li>
-        <li><a href="#areas" class="hover:text-dorado transition-colors">Áreas</a></li>
-        <li><a href="#contacto" class="hover:text-dorado transition-colors">Contacto</a></li>
-      </ul>
+    <!-- ===== NAV ===== -->
+    <nav class="fixed top-0 left-0 w-full bg-dark-mate/95 backdrop-blur-md z-50 border-b border-dorado/20">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#inicio" class="text-dorado font-bold text-lg tracking-wide uppercase leading-tight">
+          Vida Nueva <span class="text-white">Chamixtla</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="hidden lg:flex items-center space-x-6 text-sm font-medium tracking-wide">
+          <li><a href="#inicio" class="hover:text-dorado transition-colors">Inicio</a></li>
+          <li><a href="#nosotros" class="hover:text-dorado transition-colors">Nosotros</a></li>
+          <li><a href="#arquetipo" class="hover:text-dorado transition-colors">Nuestro Enfoque</a></li>
+          <li><a href="#metodo" class="hover:text-dorado transition-colors">Método</a></li>
+          <li><a href="#areas" class="hover:text-dorado transition-colors">Áreas</a></li>
+          <li><a href="#familiares" class="hover:text-dorado transition-colors">Familiares</a></li>
+          <li><a href="#testimonios" class="hover:text-dorado transition-colors">Testimonios</a></li>
+          <li>
+            <a href="#contacto" class="bg-dorado hover:bg-yellow-400 text-dark-mate font-extrabold px-5 py-2 rounded transition-colors">
+              Contacto
+            </a>
+          </li>
+        </ul>
+
+        <!-- Mobile Hamburger -->
+        <button id="menu-btn" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Abrir menú">
+          <span class="w-6 h-0.5 bg-slate-100 block"></span>
+          <span class="w-6 h-0.5 bg-slate-100 block"></span>
+          <span class="w-6 h-0.5 bg-slate-100 block"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden bg-dark-mate border-t border-slate-800 px-6 py-5">
+        <ul class="space-y-4 text-sm font-medium">
+          <li><a href="#inicio" class="block hover:text-dorado transition-colors" data-mobile-link>Inicio</a></li>
+          <li><a href="#nosotros" class="block hover:text-dorado transition-colors" data-mobile-link>Nosotros</a></li>
+          <li><a href="#arquetipo" class="block hover:text-dorado transition-colors" data-mobile-link>Nuestro Enfoque</a></li>
+          <li><a href="#metodo" class="block hover:text-dorado transition-colors" data-mobile-link>Método</a></li>
+          <li><a href="#areas" class="block hover:text-dorado transition-colors" data-mobile-link>Áreas</a></li>
+          <li><a href="#familiares" class="block hover:text-dorado transition-colors" data-mobile-link>Familiares</a></li>
+          <li><a href="#testimonios" class="block hover:text-dorado transition-colors" data-mobile-link>Testimonios</a></li>
+          <li><a href="#contacto" class="block text-dorado font-bold" data-mobile-link>Contacto</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <header id="inicio" class="min-height-[100vh] flex flex-col justify-center items-center text-center px-4 pt-32 pb-20 relative overflow-hidden min-h-screen">
-      <div class="absolute inset-0 bg-gradient-to-b from-azul-profundo/40 to-dark-mate z-0"></div>
-      
-      <div class="relative z-10 max-w-3xl mx-auto">
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 text-white">
-          Vida Nueva <span class="text-dorado">Chamixtla</span>
+    <!-- ===== HERO ===== -->
+    <header id="inicio" class="relative min-h-screen flex flex-col justify-center items-center text-center px-4 pt-24 pb-20 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-azul-profundo via-dark-mate to-dark-mate z-0"></div>
+      <!-- Subtle dot pattern overlay -->
+      <div class="absolute inset-0 opacity-[0.03] z-0"
+        style="background-image: radial-gradient(#d4af37 1px, transparent 1px); background-size: 32px 32px;">
+      </div>
+
+      <div class="relative z-10 max-w-4xl mx-auto">
+        <p class="text-dorado text-xs font-bold tracking-widest uppercase mb-6">Grupo de Ayuda Mutua</p>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-white leading-tight">
+          Vida Nueva<br><span class="text-dorado">Chamixtla</span>
         </h1>
-        <p id="hero-frase" class="text-lg md:text-2xl text-slate-400 italic font-light max-w-2xl mx-auto mb-8">
-          “Donde termina la destrucción, comienza una nueva oportunidad.”
+        <p id="hero-frase" class="text-xl md:text-2xl text-slate-300 italic font-light max-w-2xl mx-auto mb-4">
+          "Donde termina la destrucción, comienza una nueva oportunidad."
         </p>
+        <p class="text-slate-500 text-base mb-10 max-w-xl mx-auto">
+          Rehabilitación integral con trato humano, empático y personalizado.
         </p>
-        <a href="#contacto" class="inline-block bg-dorado hover:bg-yellow-500 text-dark-mate font-bold px-8 py-3 rounded shadow-lg transition-all transform hover:-translate-y-0.5">
-          Necesito Ayuda Ahora
-        </a>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#contacto"
+            class="inline-block bg-dorado hover:bg-yellow-400 text-dark-mate font-extrabold px-10 py-4 rounded shadow-lg transition-all transform hover:-translate-y-0.5 text-sm uppercase tracking-widest">
+            Necesito Ayuda Ahora
+          </a>
+          <a href="#nosotros"
+            class="inline-block border border-dorado/50 hover:border-dorado text-dorado font-bold px-10 py-4 rounded transition-all text-sm uppercase tracking-widest">
+            Conocer Más
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+        <svg class="w-6 h-6 text-dorado opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
       </div>
     </header>
 
-    <section id="nosotros" class="py-24 px-6 max-w-5xl mx-auto border-t border-slate-800">
-      <h2 class="text-3xl font-bold text-center text-white mb-2 tracking-wide uppercase">¿Quiénes Somos?</h2>
-      <div class="w-12 h-1 bg-dorado mx-auto mb-12"></div>
-      
-      <div class="text-center text-slate-300 space-y-6 text-lg max-w-3xl mx-auto">
-        <p>
-          Somos un grupo de ayuda mutua enfocado en la rehabilitación integral de personas con problemas de adicción y dependencia emocional, física y conductual.
+    <!-- ===== NOSOTROS ===== -->
+    <section id="nosotros" class="py-24 px-6 border-t border-slate-800">
+      <div class="max-w-6xl mx-auto">
+        <p class="text-center text-dorado text-xs font-bold tracking-widest uppercase mb-3">¿Quiénes Somos?</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-3">Vida Nueva Chamixtla</h2>
+        <div class="w-12 h-1 bg-dorado mx-auto mb-10"></div>
+
+        <p class="text-center text-slate-300 text-lg leading-relaxed max-w-3xl mx-auto mb-16">
+          Somos un grupo de ayuda mutua enfocado en la <strong class="text-white">rehabilitación integral</strong> de
+          personas con problemas de adicción y dependencia emocional, física y conductual.
+          <br><br>
+          Aquí creemos que nadie está perdido mientras tenga
+          <em class="text-dorado">disposición para comenzar nuevamente.</em>
         </p>
-        <p class="text-xl italic text-dorado font-medium">
-          “No rescatamos adictos… ayudamos a reconstruir vidas.”
-        </p>
-        <p>
-          Nuestro arquetipo se caracteriza por la **disciplina con dignidad**, ofreciendo un acompañamiento firme, humano y consciente, trabajando desde la escucha, la comprensión y la contención emocional.
-        </p>
-      </div>
-    </section>
 
-    <section id="metodo" class="py-24 px-6 max-w-6xl mx-auto border-t border-slate-800">
-      <h2 class="text-3xl font-bold text-center text-white mb-2 tracking-wide uppercase">Nuestro Método (3 Meses)</h2>
-      <div class="w-12 h-1 bg-dorado mx-auto mb-12"></div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-azul-profundo p-8 rounded-lg border-t-4 border-dorado shadow-xl flex flex-col justify-between">
-          <div>
-            <span class="text-xs font-bold tracking-widest text-dorado uppercase block mb-1">Primer Mes</span>
-            <h3 class="text-xl font-bold text-white mb-4">1. Desintoxicación y Adaptación</h3>
-            <p class="text-sm text-slate-400 mb-4"><strong class="text-slate-200">Objetivo:</strong> Romper la negación y estabilizar física y emocionalmente al residente.</p>
+        <!-- Model characteristics grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="bg-azul-profundo/60 border border-slate-700/50 rounded-xl p-6 hover:border-dorado/40 transition-colors">
+            <div class="text-3xl mb-4">🤝</div>
+            <h4 class="font-bold text-white mb-2">Trato Humano y Empático</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">Cada persona es tratada con dignidad y respeto en todo momento.</p>
           </div>
-          <ul class="text-sm text-slate-300 space-y-2 border-t border-slate-700/50 pt-4">
-            <li>• Desintoxicación emocional</li>
-            <li>• Aceptación de la enfermedad</li>
-            <li>• Adquisición de hábitos básicos</li>
-            <li>• Tribunas grupales y dinámicas</li>
-          </ul>
-        </div>
-
-        <div class="bg-azul-profundo p-8 rounded-lg border-t-4 border-dorado shadow-xl flex flex-col justify-between">
-          <div>
-            <span class="text-xs font-bold tracking-widest text-dorado uppercase block mb-1">Segundo Mes</span>
-            <h3 class="text-xl font-bold text-white mb-4">2. Confrontación y Reconstrucción</h3>
-            <p class="text-sm text-slate-400 mb-4"><strong class="text-slate-200">Objetivo:</strong> Identificar heridas emocionales y patrones destructivos profundos.</p>
+          <div class="bg-azul-profundo/60 border border-slate-700/50 rounded-xl p-6 hover:border-dorado/40 transition-colors">
+            <div class="text-3xl mb-4">👤</div>
+            <h4 class="font-bold text-white mb-2">Atención Personalizada</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">Cada residente recibe un plan adaptado a su historia y necesidades específicas.</p>
           </div>
-          <ul class="text-sm text-slate-300 space-y-2 border-t border-slate-700/50 pt-4">
-            <li>• Trabajo de niño interior</li>
-            <li>• Manejo de miedos y resentimientos</li>
-            <li>• Terapias psicológicas y grupales</li>
-            <li>• Manualidades terapéuticas</li>
-          </ul>
-        </div>
-
-        <div class="bg-azul-profundo p-8 rounded-lg border-t-4 border-dorado shadow-xl flex flex-col justify-between">
-          <div>
-            <span class="text-xs font-bold tracking-widest text-dorado uppercase block mb-1">Tercer Mes</span>
-            <h3 class="text-xl font-bold text-white mb-4">3. Reintegración y Proyecto</h3>
-            <p class="text-sm text-slate-400 mb-4"><strong class="text-slate-200">Objetivo:</strong> Preparar al residente para reintegrarse a la sociedad con herramientas sólidas.</p>
+          <div class="bg-azul-profundo/60 border border-slate-700/50 rounded-xl p-6 hover:border-dorado/40 transition-colors">
+            <div class="text-3xl mb-4">⚖️</div>
+            <h4 class="font-bold text-white mb-2">Disciplina con Dignidad</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">Estructura y límites sin humillación ni castigo, con firmeza y amor genuino.</p>
           </div>
-          <ul class="text-sm text-slate-300 space-y-2 border-t border-slate-700/50 pt-4">
-            <li>• Prevención de recaídas activa</li>
-            <li>• Desarrollo de inteligencia emocional</li>
-            <li>• Crecimiento y plan espiritual</li>
-            <li>• Seguimiento familiar continuo</li>
-          </ul>
+          <div class="bg-azul-profundo/60 border border-slate-700/50 rounded-xl p-6 hover:border-dorado/40 transition-colors">
+            <div class="text-3xl mb-4">💬</div>
+            <h4 class="font-bold text-white mb-2">Conserjería Emocional</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">Acompañamiento cercano para trabajar conflictos internos y sanar desde adentro.</p>
+          </div>
+          <div class="bg-azul-profundo/60 border border-slate-700/50 rounded-xl p-6 hover:border-dorado/40 transition-colors">
+            <div class="text-3xl mb-4">🎯</div>
+            <h4 class="font-bold text-white mb-2">Actividades Terapéuticas</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">Deporte, manualidades, psicología y espiritualidad integradas en un mismo espacio.</p>
+          </div>
+          <div class="bg-azul-profundo/60 border border-slate-700/50 rounded-xl p-6 hover:border-dorado/40 transition-colors">
+            <div class="text-3xl mb-4">✨</div>
+            <h4 class="font-bold text-white mb-2">Recuperación Integral</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">Trabajo espiritual, mental y físico para una transformación completa y duradera.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="areas" class="py-24 px-6 max-w-5xl mx-auto border-t border-slate-800">
-      <h2 class="text-3xl font-bold text-center text-white mb-2 tracking-wide uppercase">Áreas Terapéuticas</h2>
-      <div class="w-12 h-1 bg-dorado mx-auto mb-12"></div>
+    <!-- ===== FRASE BANNER ===== -->
+    <div class="bg-dorado py-12 px-6 text-center">
+      <p class="text-dark-mate text-xl md:text-2xl font-bold italic max-w-3xl mx-auto">
+        "No rescatamos adictos… ayudamos a reconstruir vidas."
+      </p>
+    </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
-        <div class="bg-white/5 p-6 rounded hover:bg-white/10 transition-colors">
-          <div class="text-3xl mb-2">🗣️</div>
-          <h4 class="font-medium text-white text-sm">Conserjería</h4>
-        </div>
-        <div class="bg-white/5 p-6 rounded hover:bg-white/10 transition-colors">
-          <div class="text-3xl mb-2">🧠</div>
-          <h4 class="font-medium text-white text-sm">Psicología</h4>
-        </div>
-        <div class="bg-white/5 p-6 rounded hover:bg-white/10 transition-colors">
-          <div class="text-3xl mb-2">🏃‍♂️</div>
-          <h4 class="font-medium text-white text-sm">Deporte</h4>
-        </div>
-        <div class="bg-white/5 p-6 rounded hover:bg-white/10 transition-colors">
-          <div class="text-3xl mb-2">🎨</div>
-          <h4 class="font-medium text-white text-sm">Terapia Ocupacional</h4>
-        </div>
-        <div class="bg-white/5 p-6 rounded hover:bg-white/10 transition-colors">
-          <div class="text-3xl mb-2">🙏</div>
-          <h4 class="font-medium text-white text-sm">Espiritualidad</h4>
-        </div>
-      </div>
+    <!-- ===== ARQUETIPO ===== -->
+    <section id="arquetipo" class="py-24 px-6 border-t border-slate-800">
+      <div class="max-w-6xl mx-auto">
+        <p class="text-center text-dorado text-xs font-bold tracking-widest uppercase mb-3">Nuestra Esencia</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-2">El Arquetipo de la Clínica</h2>
+        <p class="text-center text-dorado text-lg italic mb-3">"Disciplina con empatía"</p>
+        <div class="w-12 h-1 bg-dorado mx-auto mb-14"></div>
 
-      <div class="mt-16 bg-azul-profundo p-8 rounded-lg border-l-4 border-dorado max-w-3xl mx-auto">
-        <h3 class="text-lg font-bold text-white mb-2 uppercase tracking-wide">La familia también necesita sanar</h3>
-        <p class="text-slate-300 text-sm leading-relaxed">
-          Ofrecemos orientación especializada para familiares: cómo establecer límites sanos, cómo actuar ante una recaída y cómo romper los círculos de codependencia emocional.
-        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
+          <!-- Left column -->
+          <div>
+            <p class="text-slate-300 text-lg leading-relaxed mb-6">
+              Nuestro arquetipo <strong class="text-white">no se basa en el castigo ni en la humillación.</strong><br>
+              Se basa en el acompañamiento firme, humano y consciente.
+            </p>
+            <p class="text-slate-400 leading-relaxed mb-10">
+              En Vida Nueva Chamixtla entendemos que detrás de cada adicción existe una realidad emocional profunda
+              que necesita ser comprendida antes de poder ser transformada.
+            </p>
+
+            <h3 class="text-white font-bold uppercase tracking-widest text-xs mb-5">Detrás de cada adicción existe:</h3>
+            <ul class="space-y-3 text-slate-300">
+              <li class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-dorado flex-shrink-0"></span>Dolor emocional no procesado
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-dorado flex-shrink-0"></span>Vacíos afectivos
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-dorado flex-shrink-0"></span>Miedo y rechazo
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-dorado flex-shrink-0"></span>Abandono y culpa
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-dorado flex-shrink-0"></span>Baja autoestima
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right column -->
+          <div>
+            <h3 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Por eso trabajamos desde:</h3>
+            <div class="space-y-4">
+              <div class="flex gap-5 items-start bg-azul-profundo/50 border border-slate-700/40 rounded-xl p-5 hover:border-dorado/30 transition-colors">
+                <span class="text-dorado font-extrabold text-xl leading-none mt-0.5">01</span>
+                <div>
+                  <h4 class="font-bold text-white mb-1">La Escucha</h4>
+                  <p class="text-slate-400 text-sm">Dar espacio para que cada persona sea escuchada sin juicio ni condena.</p>
+                </div>
+              </div>
+              <div class="flex gap-5 items-start bg-azul-profundo/50 border border-slate-700/40 rounded-xl p-5 hover:border-dorado/30 transition-colors">
+                <span class="text-dorado font-extrabold text-xl leading-none mt-0.5">02</span>
+                <div>
+                  <h4 class="font-bold text-white mb-1">La Comprensión</h4>
+                  <p class="text-slate-400 text-sm">Entender el origen del dolor para transformarlo con conciencia y herramientas reales.</p>
+                </div>
+              </div>
+              <div class="flex gap-5 items-start bg-azul-profundo/50 border border-slate-700/40 rounded-xl p-5 hover:border-dorado/30 transition-colors">
+                <span class="text-dorado font-extrabold text-xl leading-none mt-0.5">03</span>
+                <div>
+                  <h4 class="font-bold text-white mb-1">La Confrontación Responsable</h4>
+                  <p class="text-slate-400 text-sm">Señalar la realidad con firmeza y claridad, sin crueldad ni humillación.</p>
+                </div>
+              </div>
+              <div class="flex gap-5 items-start bg-azul-profundo/50 border border-slate-700/40 rounded-xl p-5 hover:border-dorado/30 transition-colors">
+                <span class="text-dorado font-extrabold text-xl leading-none mt-0.5">04</span>
+                <div>
+                  <h4 class="font-bold text-white mb-1">El Respeto y la Contención Emocional</h4>
+                  <p class="text-slate-400 text-sm">Acompañar el proceso con dignidad, paciencia y presencia constante.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 bg-dorado/10 border border-dorado/25 rounded-xl p-6 text-center">
+              <p class="text-dorado italic font-medium">
+                "No buscamos quebrar personas.<br>Buscamos ayudarlas a reencontrarse consigo mismas."
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="contacto" class="py-24 px-6 max-w-4xl mx-auto border-t border-slate-800 mb-12">
-      <div class="bg-azul-profundo rounded-xl p-8 md:p-12 shadow-2xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div>
-          <h2 class="text-2xl font-bold text-white mb-2 text-left after:hidden">¿Listo para dar el primer paso?</h2>
-          <p class="text-sm text-slate-400 mb-6">Aquí no juzgamos tu pasado. Trabajamos por tu futuro.</p>
-          
-          <div class="space-y-3 text-sm text-slate-300">
-            <p id="info-direccion">📍 <strong class="text-white">Dirección:</strong> [Insertar Dirección, Chamixtla]</p>
-            <p id="info-telefono">📞 <strong class="text-white">Teléfono:</strong> [Insertar Teléfono]</p>
-            <p>🕒 <strong class="text-white">Horarios:</strong> Atención las 24 horas</p>
+    <!-- ===== MÉTODO 3 MESES ===== -->
+    <section id="metodo" class="py-24 px-6 bg-azul-profundo/15 border-t border-slate-800">
+      <div class="max-w-6xl mx-auto">
+        <p class="text-center text-dorado text-xs font-bold tracking-widest uppercase mb-3">Proceso de Rehabilitación</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-3">Nuestro Método</h2>
+        <p class="text-center text-slate-400 mb-3">
+          Programa estructurado de <strong class="text-white">3 meses</strong> dividido en etapas progresivas
+        </p>
+        <div class="w-12 h-1 bg-dorado mx-auto mb-16"></div>
+
+        <!-- Etapa 1 -->
+        <div class="mb-10 bg-azul-profundo rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50">
+          <div class="bg-dorado/10 border-b border-dorado/20 px-8 py-6">
+            <div class="flex items-center gap-5">
+              <span class="bg-dorado text-dark-mate font-extrabold w-12 h-12 rounded-full flex items-center justify-center text-xl flex-shrink-0">1</span>
+              <div>
+                <span class="text-dorado text-xs font-bold tracking-widest uppercase">Primer Mes</span>
+                <h3 class="text-xl md:text-2xl font-bold text-white">Desintoxicación y Adaptación</h3>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h4 class="text-dorado font-bold uppercase text-xs tracking-widest mb-3">Objetivo</h4>
+              <p class="text-slate-300 text-sm leading-relaxed">Romper la negación y estabilizar física y emocionalmente al residente para comenzar el proceso de sanación.</p>
+            </div>
+            <div>
+              <h4 class="text-dorado font-bold uppercase text-xs tracking-widest mb-3">Se Trabaja</h4>
+              <ul class="space-y-2 text-sm text-slate-300">
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Desintoxicación emocional</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Aceptación de la enfermedad</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Hábitos básicos y rutinas</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Higiene personal y descanso</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Control de impulsos</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-dorado font-bold uppercase text-xs tracking-widest mb-3">Actividades</h4>
+              <ul class="space-y-2 text-sm text-slate-300">
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Tribunas grupales</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Conserjería inicial</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Ejercicio físico</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Lectura reflexiva</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Dinámicas de honestidad</li>
+              </ul>
+            </div>
           </div>
         </div>
-        
-        <div class="flex flex-col space-y-4">
-          <a id="btn-whatsapp" href="https://wa.me/TU_NUMERO_AQUI" target="_blank" class="w-full text-center bg-[#25d366] hover:bg-[#20ba5a] text-white font-bold py-3 px-6 rounded transition-colors shadow">
-            Escríbenos por WhatsApp
+
+        <!-- Etapa 2 -->
+        <div class="mb-10 bg-azul-profundo rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50">
+          <div class="bg-dorado/10 border-b border-dorado/20 px-8 py-6">
+            <div class="flex items-center gap-5">
+              <span class="bg-dorado text-dark-mate font-extrabold w-12 h-12 rounded-full flex items-center justify-center text-xl flex-shrink-0">2</span>
+              <div>
+                <span class="text-dorado text-xs font-bold tracking-widest uppercase">Segundo Mes</span>
+                <h3 class="text-xl md:text-2xl font-bold text-white">Confrontación y Reconstrucción</h3>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h4 class="text-dorado font-bold uppercase text-xs tracking-widest mb-3">Objetivo</h4>
+              <p class="text-slate-300 text-sm leading-relaxed">Identificar heridas emocionales profundas y patrones destructivos que alimentan la adicción.</p>
+            </div>
+            <div>
+              <h4 class="text-dorado font-bold uppercase text-xs tracking-widest mb-3">Se Trabaja</h4>
+              <ul class="space-y-2 text-sm text-slate-300">
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Miedos y resentimientos</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Ego y dependencia emocional</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Distorsiones cognitivas</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Conductas autodestructivas</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Patrones relacionales tóxicos</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-dorado font-bold uppercase text-xs tracking-widest mb-3">Actividades</h4>
+              <ul class="space-y-2 text-sm text-slate-300">
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Psicología individual</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Terapia grupal</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Trabajo de niño interior</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Manualidades terapéuticas</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Compartimientos emocionales</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Etapa 3 -->
+        <div class="bg-azul-profundo rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50">
+          <div class="bg-dorado/10 border-b border-dorado/20 px-8 py-6">
+            <div class="flex items-center gap-5">
+              <span class="bg-dorado text-dark-mate font-extrabold w-12 h-12 rounded-full flex items-center justify-center text-xl flex-shrink-0">3</span>
+              <div>
+                <span class="text-dorado text-xs font-bold tracking-widest uppercase">Tercer Mes</span>
+                <h3 class="text-xl md:text-2xl font-bold text-white">Reintegración y Proyecto de Vida</h3>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h4 class="text-dorado font-bold uppercase text-xs tracking-widest mb-3">Objetivo</h4>
+              <p class="text-slate-300 text-sm leading-relaxed">Preparar al residente para reintegrarse a la sociedad con herramientas emocionales, espirituales y prácticas.</p>
+            </div>
+            <div>
+              <h4 class="text-dorado font-bold uppercase text-xs tracking-widest mb-3">Se Trabaja</h4>
+              <ul class="space-y-2 text-sm text-slate-300">
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Responsabilidad y proyecto de vida</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Espiritualidad práctica</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Prevención de recaídas</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Inteligencia emocional</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Servicio y gratitud</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-dorado font-bold uppercase text-xs tracking-widest mb-3">Actividades</h4>
+              <ul class="space-y-2 text-sm text-slate-300">
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Conserjería avanzada</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Dinámicas de liderazgo</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Actividades recreativas</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Terapia ocupacional</li>
+                <li class="flex items-center gap-2"><span class="text-dorado">▸</span> Plan de seguimiento</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ÁREAS TERAPÉUTICAS ===== -->
+    <section id="areas" class="py-24 px-6 border-t border-slate-800">
+      <div class="max-w-6xl mx-auto">
+        <p class="text-center text-dorado text-xs font-bold tracking-widest uppercase mb-3">Áreas de Intervención</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-3">Áreas Terapéuticas</h2>
+        <div class="w-12 h-1 bg-dorado mx-auto mb-16"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-azul-profundo rounded-xl p-8 border border-slate-700/50 hover:border-dorado/40 transition-colors group">
+            <div class="text-4xl mb-5">🗣️</div>
+            <h3 class="text-lg font-bold text-white mb-3 group-hover:text-dorado transition-colors">Conserjería</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Acompañamiento emocional personalizado para trabajar conflictos internos, recaídas, miedo y negación. Un espacio seguro, confidencial y sin juicios.
+            </p>
+          </div>
+          <div class="bg-azul-profundo rounded-xl p-8 border border-slate-700/50 hover:border-dorado/40 transition-colors group">
+            <div class="text-4xl mb-5">🧠</div>
+            <h3 class="text-lg font-bold text-white mb-3 group-hover:text-dorado transition-colors">Psicología</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Atención enfocada en salud emocional, manejo de ansiedad, depresión y reconstrucción personal. Herramientas para entender y transformar la conducta.
+            </p>
+          </div>
+          <div class="bg-azul-profundo rounded-xl p-8 border border-slate-700/50 hover:border-dorado/40 transition-colors group">
+            <div class="text-4xl mb-5">🏃‍♂️</div>
+            <h3 class="text-lg font-bold text-white mb-3 group-hover:text-dorado transition-colors">Deporte</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              La activación física ayuda a disminuir ansiedad, mejorar autoestima y recuperar disciplina. El cuerpo sano es pilar fundamental de la recuperación.
+            </p>
+          </div>
+          <div class="bg-azul-profundo rounded-xl p-8 border border-slate-700/50 hover:border-dorado/40 transition-colors group">
+            <div class="text-4xl mb-5">🎨</div>
+            <h3 class="text-lg font-bold text-white mb-3 group-hover:text-dorado transition-colors">Manualidades y Terapia Ocupacional</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Actividades diseñadas para fortalecer paciencia, concentración y estabilidad emocional. Crear con las manos sana desde adentro hacia afuera.
+            </p>
+          </div>
+          <div class="bg-azul-profundo rounded-xl p-8 border border-slate-700/50 hover:border-dorado/40 transition-colors group sm:col-span-2 lg:col-span-1">
+            <div class="text-4xl mb-5">🙏</div>
+            <h3 class="text-lg font-bold text-white mb-3 group-hover:text-dorado transition-colors">Espiritualidad</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Trabajamos el crecimiento espiritual como herramienta de transformación y sentido de vida. La fe y la conexión interior como pilares de la recuperación duradera.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FILOSOFÍA ===== -->
+    <section id="filosofia" class="py-24 px-6 bg-azul-profundo/20 border-t border-slate-800">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-dorado text-xs font-bold tracking-widest uppercase mb-3">Lo que nos define</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">Filosofía del Grupo</h2>
+        <div class="w-12 h-1 bg-dorado mx-auto mb-12"></div>
+
+        <blockquote class="text-xl md:text-2xl text-slate-200 italic leading-relaxed mb-12 font-light">
+          "Creemos que la adicción no es falta de voluntad…<br>
+          es una lucha interna que necesita
+          <span class="text-dorado font-medium">comprensión, guía y recuperación integral.</span>"
+        </blockquote>
+
+        <p class="text-slate-400 mb-8">En Vida Nueva Chamixtla buscamos formar personas:</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-14">
+          <div class="bg-azul-profundo/70 border border-slate-700/50 rounded-xl py-5 px-4">
+            <p class="text-white font-medium">Responsables</p>
+          </div>
+          <div class="bg-azul-profundo/70 border border-slate-700/50 rounded-xl py-5 px-4">
+            <p class="text-white font-medium">Emocionalmente conscientes</p>
+          </div>
+          <div class="bg-azul-profundo/70 border border-slate-700/50 rounded-xl py-5 px-4">
+            <p class="text-white font-medium">Espiritualmente fuertes</p>
+          </div>
+          <div class="bg-azul-profundo/70 border border-slate-700/50 rounded-xl py-5 px-4 col-span-2 md:col-span-1">
+            <p class="text-white font-medium">Capaces de reconstruir vínculos</p>
+          </div>
+          <div class="bg-azul-profundo/70 border border-slate-700/50 rounded-xl py-5 px-4">
+            <p class="text-white font-medium">Libres del ciclo adictivo</p>
+          </div>
+          <div class="bg-azul-profundo/70 border border-slate-700/50 rounded-xl py-5 px-4">
+            <p class="text-white font-medium">Con un nuevo proyecto de vida</p>
+          </div>
+        </div>
+
+        <!-- Quote grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+          <div class="border-l-4 border-dorado pl-5 py-2">
+            <p class="text-slate-400 italic text-sm">"No prometemos magia. Promovemos transformación."</p>
+          </div>
+          <div class="border-l-4 border-dorado pl-5 py-2">
+            <p class="text-slate-400 italic text-sm">"La recuperación comienza cuando termina la negación."</p>
+          </div>
+          <div class="border-l-4 border-dorado pl-5 py-2">
+            <p class="text-slate-400 italic text-sm">"Sanar no es olvidar el pasado, es aprender a vivir sin destruirse."</p>
+          </div>
+          <div class="border-l-4 border-dorado pl-5 py-2">
+            <p class="text-slate-400 italic text-sm">"La adicción destruye lentamente; la recuperación reconstruye día a día."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAMILIARES ===== -->
+    <section id="familiares" class="py-24 px-6 border-t border-slate-800">
+      <div class="max-w-6xl mx-auto">
+        <p class="text-center text-dorado text-xs font-bold tracking-widest uppercase mb-3">Orientación Familiar</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-3">La Familia También Necesita Sanar</h2>
+        <div class="w-12 h-1 bg-dorado mx-auto mb-6"></div>
+        <p class="text-center text-slate-400 max-w-2xl mx-auto mb-16 leading-relaxed">
+          La adicción no solo afecta a quien la vive. Toda la familia entra en un ciclo de codependencia, miedo
+          y desgaste emocional. Aquí también hay orientación y apoyo para ustedes.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div class="bg-azul-profundo/60 border border-slate-700/50 rounded-xl p-6 hover:border-dorado/40 transition-colors">
+            <div class="text-2xl mb-4">🆘</div>
+            <h4 class="font-bold text-white mb-2">Cómo actuar ante una recaída</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">Guía práctica para no entrar en pánico, mantener los límites y buscar apoyo profesional de manera inmediata.</p>
+          </div>
+          <div class="bg-azul-profundo/60 border border-slate-700/50 rounded-xl p-6 hover:border-dorado/40 transition-colors">
+            <div class="text-2xl mb-4">🔗</div>
+            <h4 class="font-bold text-white mb-2">Dejar de fomentar la dependencia</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">Aprende a identificar patrones de codependencia y cómo transformar tu rol familiar hacia uno más saludable.</p>
+          </div>
+          <div class="bg-azul-profundo/60 border border-slate-700/50 rounded-xl p-6 hover:border-dorado/40 transition-colors">
+            <div class="text-2xl mb-4">🛡️</div>
+            <h4 class="font-bold text-white mb-2">Límites sanos</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">Establecer límites no es abandonar. Es una herramienta de amor y responsabilidad para toda la familia.</p>
+          </div>
+          <div class="bg-azul-profundo/60 border border-slate-700/50 rounded-xl p-6 hover:border-dorado/40 transition-colors">
+            <div class="text-2xl mb-4">💬</div>
+            <h4 class="font-bold text-white mb-2">Comunicación efectiva</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">Herramientas para comunicarte sin detonar conflictos, sin habilitar conductas y sin perder la conexión afectiva.</p>
+          </div>
+          <div class="bg-azul-profundo/60 border border-slate-700/50 rounded-xl p-6 hover:border-dorado/40 transition-colors sm:col-span-2 lg:col-span-1">
+            <div class="text-2xl mb-4">📚</div>
+            <h4 class="font-bold text-white mb-2">Educación sobre adicciones</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">Comprender la adicción desde la ciencia y la experiencia ayuda a quitar culpas y construir empatía real y funcional.</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="#contacto"
+            class="inline-block bg-dorado hover:bg-yellow-400 text-dark-mate font-bold px-8 py-4 rounded transition-all transform hover:-translate-y-0.5 text-sm uppercase tracking-widest">
+            Solicitar Orientación Familiar
           </a>
-          <a href="tel:TU_NUMERO_AQUI" class="w-full text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 px-6 rounded border border-slate-700 transition-colors">
-            Llamar por Teléfono
-          </a>
         </div>
       </div>
     </section>
 
-    <footer class="bg-black/40 text-center py-8 text-xs text-slate-500 border-t border-white/5">
-      <p>&copy; 2026 Grupo de Ayuda Mutua Vida Nueva Chamixtla. Todos los derechos reservados.</p>
+    <!-- ===== TESTIMONIOS ===== -->
+    <section id="testimonios" class="py-24 px-6 bg-azul-profundo/15 border-t border-slate-800">
+      <div class="max-w-5xl mx-auto">
+        <p class="text-center text-dorado text-xs font-bold tracking-widest uppercase mb-3">Voces de Recuperación</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-3">Testimonios</h2>
+        <div class="w-12 h-1 bg-dorado mx-auto mb-16"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Testimonio 1 -->
+          <div class="bg-azul-profundo rounded-2xl p-8 border border-slate-700/50 relative overflow-hidden">
+            <div class="text-dorado text-7xl font-serif absolute -top-2 left-5 opacity-20 leading-none select-none">"</div>
+            <div class="relative z-10">
+              <p class="text-slate-300 leading-relaxed mb-6 italic">
+                "Llegué destruido física y emocionalmente. Aquí encontré comprensión, disciplina y una nueva manera de vivir. Hoy llevo más de un año limpio y reconstruyendo mi familia."
+              </p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-dorado/20 border border-dorado/40 flex items-center justify-center flex-shrink-0">
+                  <span class="text-dorado font-bold text-xs">R.M.</span>
+                </div>
+                <div>
+                  <p class="text-white font-semibold text-sm">R.M.</p>
+                  <p class="text-slate-500 text-xs">Egresado — Programa 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 2 -->
+          <div class="bg-azul-profundo rounded-2xl p-8 border border-slate-700/50 relative overflow-hidden">
+            <div class="text-dorado text-7xl font-serif absolute -top-2 left-5 opacity-20 leading-none select-none">"</div>
+            <div class="relative z-10">
+              <p class="text-slate-300 leading-relaxed mb-6 italic">
+                "No solo dejé de consumir… aprendí a enfrentarme a mí mismo. Por primera vez entendí de dónde venía mi dolor y pude soltar cosas que cargaba desde niño."
+              </p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-dorado/20 border border-dorado/40 flex items-center justify-center flex-shrink-0">
+                  <span class="text-dorado font-bold text-xs">J.L.</span>
+                </div>
+                <div>
+                  <p class="text-white font-semibold text-sm">J.L.</p>
+                  <p class="text-slate-500 text-xs">Egresado — Programa 2025</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 3 — familiar -->
+          <div class="bg-azul-profundo rounded-2xl p-8 border border-slate-700/50 relative overflow-hidden md:col-span-2">
+            <div class="text-dorado text-7xl font-serif absolute -top-2 left-5 opacity-20 leading-none select-none">"</div>
+            <div class="relative z-10">
+              <p class="text-slate-300 leading-relaxed mb-6 italic">
+                "Como mamá, llegué sin esperanza. El equipo de Vida Nueva no solo ayudó a mi hijo, nos ayudó a toda la familia a entender la enfermedad y sanar nuestras propias heridas. Hoy somos una familia diferente."
+              </p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-dorado/20 border border-dorado/40 flex items-center justify-center flex-shrink-0">
+                  <span class="text-dorado font-bold text-xs">M.G.</span>
+                </div>
+                <div>
+                  <p class="text-white font-semibold text-sm">M.G. — Familiar de egresado</p>
+                  <p class="text-slate-500 text-xs">Orientación familiar — 2025</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="py-24 px-6 border-t border-slate-800">
+      <div class="max-w-5xl mx-auto">
+        <p class="text-center text-dorado text-xs font-bold tracking-widest uppercase mb-3">Da el Primer Paso</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-3">¿Listo para Comenzar?</h2>
+        <p class="text-center text-slate-400 mb-3">Aquí no juzgamos tu pasado. Trabajamos por tu futuro.</p>
+        <div class="w-12 h-1 bg-dorado mx-auto mb-16"></div>
+
+        <div class="bg-azul-profundo rounded-2xl p-8 md:p-12 shadow-2xl grid grid-cols-1 md:grid-cols-2 gap-10 items-start border border-slate-700/50">
+          <!-- Contact info -->
+          <div>
+            <h3 class="text-white font-bold text-xl mb-7">Información de Contacto</h3>
+            <div class="space-y-6">
+              <div id="info-direccion" class="flex items-start gap-4">
+                <span class="text-xl mt-0.5">📍</span>
+                <div>
+                  <p class="text-white font-semibold text-sm">Dirección</p>
+                  <p class="text-slate-400 text-sm">[Insertar Dirección, Chamixtla]</p>
+                </div>
+              </div>
+              <div id="info-telefono" class="flex items-start gap-4">
+                <span class="text-xl mt-0.5">📞</span>
+                <div>
+                  <p class="text-white font-semibold text-sm">Teléfono</p>
+                  <p class="text-slate-400 text-sm">[Insertar Teléfono]</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="text-xl mt-0.5">🕒</span>
+                <div>
+                  <p class="text-white font-semibold text-sm">Horarios</p>
+                  <p class="text-slate-400 text-sm">Atención las 24 horas, los 365 días del año</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="text-xl mt-0.5">📘</span>
+                <div>
+                  <p class="text-white font-semibold text-sm">Facebook</p>
+                  <p class="text-slate-400 text-sm">Vida Nueva Chamixtla</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 bg-dorado/10 border border-dorado/20 rounded-xl p-5">
+              <p class="text-dorado italic text-sm text-center leading-relaxed">
+                "La adicción destruye lentamente;<br>la recuperación reconstruye día a día."
+              </p>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div>
+            <h3 class="text-white font-bold text-xl mb-7">Contáctanos Ahora</h3>
+            <div class="space-y-4">
+              <a id="btn-whatsapp" href="https://wa.me/TU_NUMERO_AQUI" target="_blank" rel="noopener noreferrer"
+                class="w-full flex items-center justify-center gap-3 bg-[#25d366] hover:bg-[#20ba5a] text-white font-bold py-4 px-6 rounded-lg transition-colors shadow-lg">
+                <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Escríbenos por WhatsApp
+              </a>
+              <a href="tel:TU_NUMERO_AQUI"
+                class="w-full flex items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 text-white font-bold py-4 px-6 rounded-lg border border-slate-700 transition-colors">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z"/>
+                </svg>
+                Llamar por Teléfono
+              </a>
+              <p class="text-slate-600 text-xs text-center pt-2">
+                Toda consulta es confidencial. No hay juicios. Solo orientación.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-black/60 border-t border-white/5 py-12 px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-8">
+          <p class="text-dorado font-bold text-lg tracking-wide uppercase mb-1">Vida Nueva Chamixtla</p>
+          <p class="text-slate-600 text-sm">Grupo de Ayuda Mutua — Rehabilitación Integral</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-5 text-xs text-slate-600 mb-8">
+          <a href="#inicio" class="hover:text-dorado transition-colors">Inicio</a>
+          <a href="#nosotros" class="hover:text-dorado transition-colors">Nosotros</a>
+          <a href="#arquetipo" class="hover:text-dorado transition-colors">Nuestro Enfoque</a>
+          <a href="#metodo" class="hover:text-dorado transition-colors">Método</a>
+          <a href="#areas" class="hover:text-dorado transition-colors">Áreas</a>
+          <a href="#familiares" class="hover:text-dorado transition-colors">Familiares</a>
+          <a href="#testimonios" class="hover:text-dorado transition-colors">Testimonios</a>
+          <a href="#contacto" class="hover:text-dorado transition-colors">Contacto</a>
+        </div>
+        <div class="border-t border-white/5 pt-6 text-center">
+          <p class="text-xs text-slate-700">&copy; 2026 Grupo de Ayuda Mutua Vida Nueva Chamixtla. Todos los derechos reservados.</p>
+        </div>
+      </div>
     </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top"
+      class="fixed bottom-6 right-6 w-12 h-12 bg-dorado text-dark-mate rounded-full shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-yellow-400 z-40"
+      aria-label="Volver arriba">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/>
+      </svg>
+    </button>
 
     <script type="module" src="/src/main.js"></script>
     <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
         });
       }
-    });
-  }
-</script>
+    </script>
   </body>
 </html>
