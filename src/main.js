@@ -50,6 +50,51 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
+  // --- Carousel ---
+  const carouselTrack = document.getElementById('carousel-track');
+  const carouselDots = document.getElementById('carousel-dots');
+
+  if (carouselTrack && carouselDots) {
+    const slides = Array.from(carouselTrack.children);
+    let current = 0;
+    let autoTimer;
+
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.setAttribute('aria-label', `Diapositiva ${i + 1}`);
+      dot.className = `w-2 h-2 rounded-full transition-colors duration-200 ${i === 0 ? 'bg-dorado' : 'bg-slate-600'}`;
+      dot.addEventListener('click', () => { goTo(i); resetTimer(); });
+      carouselDots.appendChild(dot);
+    });
+
+    function goTo(n) {
+      current = (n + slides.length) % slides.length;
+      carouselTrack.style.transform = `translateX(-${current * 100}%)`;
+      Array.from(carouselDots.children).forEach((dot, i) => {
+        dot.className = `w-2 h-2 rounded-full transition-colors duration-200 ${i === current ? 'bg-dorado' : 'bg-slate-600'}`;
+      });
+    }
+
+    function resetTimer() {
+      clearInterval(autoTimer);
+      autoTimer = setInterval(() => goTo(current + 1), 4500);
+    }
+
+    document.getElementById('carousel-prev').addEventListener('click', () => { goTo(current - 1); resetTimer(); });
+    document.getElementById('carousel-next').addEventListener('click', () => { goTo(current + 1); resetTimer(); });
+
+    // Touch swipe support
+    let touchStartX = 0;
+    const carouselEl = document.getElementById('carousel');
+    carouselEl.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    carouselEl.addEventListener('touchend', (e) => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) { goTo(current + (diff > 0 ? 1 : -1)); resetTimer(); }
+    }, { passive: true });
+
+    resetTimer();
+  }
+
   // --- Back to top button ---
   const backToTop = document.getElementById('back-to-top');
   if (backToTop) {
