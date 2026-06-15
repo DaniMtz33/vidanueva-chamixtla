@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panel de Administración | Vida Nueva</title>
-    <!-- Widget de Netlify Identity obligatorio para el login -->
+    <!-- Incluye el widget de Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <!-- Script del CMS -->
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </head>
-<body></body>
+<body>
+    <!-- Script de Decap CMS cargado en el body para evitar conflictos con el DOM -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</body>
 </html>
