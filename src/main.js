@@ -67,9 +67,13 @@ document.addEventListener("DOMContentLoaded", async () => {
       carouselDots.appendChild(dot);
     });
 
+    function slideWidth() {
+      return carouselTrack.parentElement.offsetWidth;
+    }
+
     function goTo(n) {
       current = (n + slides.length) % slides.length;
-      carouselTrack.style.transform = `translateX(-${current * 100}%)`;
+      carouselTrack.style.transform = `translateX(-${current * slideWidth()}px)`;
       Array.from(carouselDots.children).forEach((dot, i) => {
         dot.className = `w-2 h-2 rounded-full transition-colors duration-200 ${i === current ? 'bg-dorado' : 'bg-slate-600'}`;
       });
@@ -82,6 +86,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     document.getElementById('carousel-prev').addEventListener('click', () => { goTo(current - 1); resetTimer(); });
     document.getElementById('carousel-next').addEventListener('click', () => { goTo(current + 1); resetTimer(); });
+
+    // Recalculate position on resize (no animation during resize)
+    window.addEventListener('resize', () => {
+      carouselTrack.style.transition = 'none';
+      carouselTrack.style.transform = `translateX(-${current * slideWidth()}px)`;
+      requestAnimationFrame(() => { carouselTrack.style.transition = ''; });
+    }, { passive: true });
 
     // Touch swipe support
     let touchStartX = 0;
