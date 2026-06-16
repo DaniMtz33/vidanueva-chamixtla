@@ -899,11 +899,12 @@
           <div>
             <h3 class="text-white font-bold text-xl mb-7">Información de Contacto</h3>
             <div class="space-y-6">
-              <div id="info-direccion" class="flex items-start gap-4">
+              <div class="flex items-start gap-4">
                 <span class="text-xl mt-0.5">📍</span>
                 <div>
-                  <p class="text-white font-semibold text-sm">Dirección</p>
-                  <p class="text-slate-400 text-sm">[Insertar Dirección, Chamixtla]</p>
+                  <p class="text-white font-semibold text-sm">Ubicación</p>
+                  <a href="https://www.google.com/maps/place/Vida+Nueva+chamixtla/@19.3445771,-99.3085216,16z" target="_blank" rel="noopener noreferrer"
+                    class="text-dorado text-sm hover:underline">Chamixtla, Estado de México</a>
                 </div>
               </div>
               <div class="flex items-start gap-4">
@@ -977,12 +978,30 @@
                 </svg>
                 Seguirnos en Facebook
               </a>
+              <a href="https://www.google.com/maps/place/Vida+Nueva+chamixtla/@19.3445771,-99.3085216,16z" target="_blank" rel="noopener noreferrer"
+                class="w-full flex items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 text-white font-bold py-4 px-6 rounded-lg border border-slate-700 transition-colors">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                Ver en Google Maps
+              </a>
               <p class="text-slate-600 text-xs text-center pt-2">
                 Toda consulta es confidencial. No hay juicios. Solo orientación.
               </p>
             </div>
           </div>
         </div>
+
+        <!-- Mapa -->
+        <div class="mt-8 rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl">
+          <iframe
+            src="https://maps.google.com/maps?q=19.3445366,-99.3085517&z=16&output=embed&hl=es"
+            width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Ubicación Vida Nueva Chamixtla">
+          </iframe>
+        </div>
+
       </div>
     </section>
 
